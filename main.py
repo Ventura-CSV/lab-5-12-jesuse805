@@ -1,15 +1,15 @@
 import random
 
-
 def split(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
-    #################
-    # Do not delete return statement
+  
+  
+  
+  
+  
+  
+  
+  
+  
     return numbers
 
 
