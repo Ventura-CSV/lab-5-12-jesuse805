@@ -2,19 +2,27 @@ import random
 
 def split(numbers):
   
-if not numbers:
-    return numbers
+    if not numbers:
+        
+        return numbers
 
-pivot = numbers[0]
-lessEqual = []
-greater = []
+    pivot = numbers[0]
+    
+    lessEqual = []
+    
+    greater = []
 
-  
-  
-  
-  
-  
-  
+    for num in numbers:
+        
+        if num <= pivot:
+            
+            lessEqual.append(num)
+            
+        else:
+            
+            greater.append(num)
+    
+    numbers = lessEqual + greater
   
     return numbers
 
