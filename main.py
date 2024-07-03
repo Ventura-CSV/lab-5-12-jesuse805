@@ -8,22 +8,17 @@ def split(numbers):
 
     pivot = numbers[0]
     
-    lessEqual = []
+    lessEqual = [pivot]
     
     greater = []
 
-    for num in numbers:
-        
-        if num <= pivot:
-            
+    for num in numbers[1:]:
+        if num <= pivot: 
             lessEqual.append(num)
-            
         else:
-            
             greater.append(num)
     
     numbers = lessEqual + greater
-  
     return numbers
 
 
