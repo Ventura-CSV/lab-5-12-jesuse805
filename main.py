@@ -3,13 +3,10 @@ import random
 def split(numbers):
   
     if not numbers:
-        
         return numbers
 
     pivot = numbers[0]
-    
-    lessEqual = [pivot]
-    
+    lessEqual = []
     greater = []
 
     for num in numbers[1:]:
@@ -18,7 +15,7 @@ def split(numbers):
         else:
             greater.append(num)
     
-    numbers = lessEqual + greater
+    numbers = lessEqual + [pivot] + greater
     return numbers
 
 
