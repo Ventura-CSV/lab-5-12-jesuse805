@@ -2,7 +2,10 @@ import random
 
 def split(numbers):
   
-  
+if not numbers:
+    return numbers
+
+
   
   
   
